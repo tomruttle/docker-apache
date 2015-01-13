@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install base packages
 RUN apt-get update && \
-    apt-get -yq install curl apache2
+    apt-get -yq install curl apache2 apache2-mpm-prefork
 
 # Configure Apache
 ENV APACHE_RUN_USER www-data
